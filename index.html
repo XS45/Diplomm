@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>IT Controller</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand"> </div>
+      <nav class="icons">
+        <button title="Devices" class="icon-btn">📟</button>
+        <button title="History" class="icon-btn">⏱</button>
+        <button title="Settings" class="icon-btn">⚙️</button>
+      </nav>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <h1>Devices</h1>
+        <div><button id="refresh">Refresh</button></div>
+      </header>
+      <section id="grid" class="grid"></section>
+    </main>
+  </div>
+  <template id="card-tpl">
+    <div class="card">
+      <div class="card-head">
+        <div class="name"></div>
+        <div class="type"></div>
+      </div>
+      <div class="card-body">
+        <div class="ip"></div>
+        <div class="desc">No data</div>
+      </div>
+      <div class="card-foot">
+        <button class="btn-check">Check</button>
+        <button class="btn-reboot">Reboot</button>
+        <button class="btn-details">Details</button>
+      </div>
+    </div>
+  </template>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
